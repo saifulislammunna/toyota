@@ -1,9 +1,8 @@
 import React from 'react';
-import './Item.css';
 import { Link } from 'react-router-dom';
-
-const Item = ({ product}) => {
-     
+import './Vehicle.css';
+const Vehicle = ({ product}) => {
+      
     const { _id, name, price, description, img } = product;
     return (
         <div className="product pb-3">
@@ -18,4 +17,4 @@ const Item = ({ product}) => {
     );
 };
 
-export default Item;
+export default Vehicle;

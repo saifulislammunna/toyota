@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
-import { Link,/* useLocation,useHistory */ } from 'react-router-dom';
+import { Link,  useLocation,useHistory  } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';  
   import { Alert,   Spinner } from 'react-bootstrap'; 
 
@@ -10,9 +10,9 @@ const Login = () => {
 
      const {user, loginUser,    isLoading, authError}   = useAuth();  
 
-    /* const  location = useLocation();
+     const  location = useLocation();
     const history = useHistory();
- */
+ 
     const handleOnChange = e =>{
        const field = e.target.name;
        const value = e.target.value;
@@ -24,7 +24,7 @@ const Login = () => {
     }
 
      const handleLoginSubmit = e => {
-        loginUser(loginData.email, loginData.password,/*  location, history */); 
+        loginUser(loginData.email, loginData.password,  location, history  ); 
         e.preventDefault();
     } 
 

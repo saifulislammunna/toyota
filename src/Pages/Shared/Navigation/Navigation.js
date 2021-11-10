@@ -16,6 +16,7 @@ import './Navigation.css';
     <Navbar.Text className=" text-dark">
            Toyota 
       </Navbar.Text>
+      
     <Navbar.Toggle />
     
     <Navbar.Collapse className="justify-content-end">
@@ -32,14 +33,16 @@ import './Navigation.css';
         user?.email ? <Nav.Link className="home text-black"  as={Link}  to="/dashboard">Dashboard</Nav.Link>
         :
         ''}  
+  
 
-
-       
-        {/* <Navbar.Text className=" text-dark">
-           {user.name}   
-      </Navbar.Text> */}   
-    </Navbar.Collapse>
      
+
+  <Navbar.Text className=" text-dark">
+           {user.displayName}   
+  </Navbar.Text>  
+                
+    </Navbar.Collapse>
+        
     </Container>
   </Navbar> 
 </>  

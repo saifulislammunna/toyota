@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button  } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import Shipping from '../../Shared/Shipping/Shipping/Shipping';
 
 const ProductsDetails = () => {
     const {_id} = useParams();
@@ -41,7 +42,7 @@ const ProductsDetails = () => {
            </div>
             
             <div>
-            
+               <Shipping></Shipping>
             </div>
            
          </div>

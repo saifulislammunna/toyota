@@ -27,9 +27,9 @@ import './Navigation.css';
         :
         <Nav.Link className="home text-black"  as={Link}  to="/login">Log in</Nav.Link>}  
        
-      {/*  <Navbar.Text className=" text-dark">
-           {user.displayName}   
-      </Navbar.Text>  */}
+        {/* <Navbar.Text className=" text-dark">
+           {user.name}   
+      </Navbar.Text> */}   
     </Navbar.Collapse>
      
     </Container>

@@ -26,6 +26,12 @@ import './Navigation.css';
         user?.email ? <Button   onClick={logout} className="log-out"  >Log out</Button>
         :
         <Nav.Link className="home text-black"  as={Link}  to="/login">Log in</Nav.Link>}  
+       {
+        user?.email ? <Nav.Link className="home text-black"  as={Link}  to="/dashboard">Dashboard</Nav.Link>
+        :
+        ''}  
+
+
        
         {/* <Navbar.Text className=" text-dark">
            {user.name}   

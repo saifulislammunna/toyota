@@ -13,7 +13,9 @@ import './Navigation.css';
   <Navbar bg="white" sticky="top" collapseOnSelect expand="lg"  variant="white">
     <Container>
          
-   
+    <Navbar.Text className=" text-dark">
+           Toyota 
+      </Navbar.Text>
     <Navbar.Toggle />
     
     <Navbar.Collapse className="justify-content-end">

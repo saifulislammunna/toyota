@@ -14,10 +14,10 @@ const Dashboard = () => {
             
             <div class="sidenav">
         <a href="#pay">pay</a>
-        <Link to="/orders"><Button color="none">My Orders</Button></Link>
+        <Link to="/orders"><Button className="bg-dark">My Orders</Button></Link>
          <a href="#review">Review</a>
        {
-          user?.email ? <Button    onClick={logout} className="log-out"  >Log out</ Button>
+          user?.email ? <Button    onClick={logout}    >Log out</ Button>
         :
          ''}  
  {/*  <a href="#contact">Contact</a> */}

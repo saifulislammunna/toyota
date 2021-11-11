@@ -35,8 +35,9 @@ const Dashboard = () => {
         <Link to={`${url}/pay`}><Button className="bg-dark">Pay</Button></Link>
        
         <Link to={`${url}/review`}><Button className="bg-dark">Review</Button></Link></div>}
-        {admin && <div> <Link to={`${url}/manageAllOrders`}><Button className="bg-dark">Manage All Orders</Button></Link>
-        <Link to={`${url}/addProduct`}><Button className="bg-dark">Add a Product</Button></Link>
+        {admin && <div> <Link to={`${url}/addProduct`}><Button className="bg-dark">Add a Product</Button></Link>
+         <Link to={`${url}/manageAllOrders`}><Button className="bg-dark">Manage All Orders</Button></Link>
+        
         <Link to={`${url}/manageProducts`}><Button className="bg-dark">Manage Products</Button></Link>
         <Link to={`${url}/makeAdmin`}><Button className="bg-dark">Make Admin</Button></Link></div>}
          
@@ -49,9 +50,11 @@ const Dashboard = () => {
 
    <div class="main">
    <Switch>
-         <Route exact path={path}>
+        { !admin  ? <Route exact path={path}>
             <DashboardHome></DashboardHome>
-        </Route>
+        </Route> : <AdminRoute exact path={path}>
+        <AddProduct></AddProduct>
+        </AdminRoute >}
          < Route     path={`${path}/orders`}>
             <MyOrders></MyOrders>
         </Route>

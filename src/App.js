@@ -45,9 +45,9 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard/>
           </PrivateRoute > 
-          <PrivateRoute path="/orders">
+         {/*  <PrivateRoute path="/orders">
             <MyOrders/>
-          </PrivateRoute > 
+          </PrivateRoute > */} 
            
           <Route path="*">
               <NotFound></NotFound>

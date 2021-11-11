@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Dashboard.css';
 import {
-  BrowserRouter as Router,
+  
   Switch,
   Route,
   useRouteMatch
@@ -13,24 +13,30 @@ import {
 import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddProduct from '../AddProduct/AddProduct';
+import Pay from '../Pay/Pay';
+import MyOrders from '../MyOrders/MyOrders';
+import Review from '../Review/Review';
+import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
+import ManageProducts from '../ManageProducts/ManageProducts';
  
 const Dashboard = () => {
-    const {user, logout} = useAuth();    
+    const {user, logout,admin} = useAuth();    
     let { path, url } = useRouteMatch();
-
+     
     return (
        <div>
             <Link to="/dashboard"><h1 className="dashboard" >Dashboard</h1></Link>
         <div>
             
             <div class="sidenav">
-            <Link to="/orders"><Button className="bg-dark">My Orders</Button></Link>
-        <Link to={`${url}`}><Button className="bg-dark">Pay</Button></Link>
+        {!admin && <div><Link to={`${url}/orders`}><Button className="bg-dark">My Orders</Button></Link>
+        <Link to={`${url}/pay`}><Button className="bg-dark">Pay</Button></Link>
        
-        <Link to={`${url}`}><Button className="bg-dark">Review</Button></Link>
+        <Link to={`${url}/review`}><Button className="bg-dark">Review</Button></Link></div>}
+        {admin && <div> <Link to={`${url}/manageAllOrders`}><Button className="bg-dark">Manage All Orders</Button></Link>
         <Link to={`${url}/addProduct`}><Button className="bg-dark">Add a Product</Button></Link>
-        <Link to={`${url}`}><Button className="bg-dark">Manage Product</Button></Link>
-        <Link to={`${url}/makeAdmin`}><Button className="bg-dark">Make Admin</Button></Link>
+        <Link to={`${url}/manageProducts`}><Button className="bg-dark">Manage Products</Button></Link>
+        <Link to={`${url}/makeAdmin`}><Button className="bg-dark">Make Admin</Button></Link></div>}
          
        {
           user?.email ? <Button    onClick={logout}    >Log out</ Button>
@@ -44,10 +50,25 @@ const Dashboard = () => {
          <Route exact path={path}>
             <DashboardHome></DashboardHome>
         </Route>
-         < Route  exact  path={`${path}/makeAdmin`}>
+         < Route     path={`${path}/orders`}>
+            <MyOrders></MyOrders>
+        </Route>
+         < Route     path={`${path}/pay`}>
+           <Pay></Pay>
+        </Route>
+         < Route     path={`${path}/review`}>
+           <Review></Review>
+        </Route>
+         < Route     path={`${path}/manageAllOrders`}>
+            <ManageAllOrders></ManageAllOrders>
+        </Route>
+         < Route     path={`${path}/manageProducts`}>
+            <ManageProducts></ManageProducts>
+        </Route>
+         < Route  path={`${path}/makeAdmin`}>
            <MakeAdmin></MakeAdmin>
         </Route>
-         < Route  exact  path={`${path}/addProduct`}>
+         < Route    path={`${path}/addProduct`}>
             <AddProduct></AddProduct>
         </Route>
         {/*<AdminRoute path={`${path}/addDoctor`}>

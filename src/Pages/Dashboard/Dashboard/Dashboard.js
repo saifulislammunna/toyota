@@ -18,7 +18,8 @@ import MyOrders from '../MyOrders/MyOrders';
 import Review from '../Review/Review';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageProducts from '../ManageProducts/ManageProducts';
-import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import AdminRoute from '../../Login/AminRoute/AdminRoute';
+ 
  
 const Dashboard = () => {
     const {user, logout,admin} = useAuth();    

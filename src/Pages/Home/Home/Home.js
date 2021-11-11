@@ -1,8 +1,10 @@
 import React from 'react';
 import Cars from '../../Shared/Cars/Cars/Cars';
 import Footer from '../../Shared/Footer/Footer/Footer';
+import HomeReviews from '../../Shared/HomeReviews/HomeReviews/HomeReviews';
+ 
 import Navigation from '../../Shared/Navigation/Navigation';
-import Reviews from '../../Shared/Reviews/Reviews/Reviews';
+ 
 import Banner from '../Banner/Banner';
 
 const Home = () => {
@@ -12,7 +14,7 @@ const Home = () => {
              <Navigation></Navigation>
               <Banner></Banner>
               <Cars></Cars>
-              <Reviews></Reviews>
+              <HomeReviews></HomeReviews> 
               <Footer></Footer>
         </div>
     );

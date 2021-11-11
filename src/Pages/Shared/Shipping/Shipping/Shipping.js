@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form'; 
  
 import useAuth from '../../../../hooks/useAuth';
-import { clearTheCart, getStoredCart } from '../../../../utilities/fakedb';
+  import { /* clearTheCart,  */getStoredCart } from '../../../../utilities/fakedb';  
  
 import './Shipping.css';
 const Shipping = (props  /* ,setBookingSuccess  */ ) => {
@@ -12,8 +12,8 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
     const {user} = useAuth();
     const onSubmit = data => {
         
-        const savedCart = getStoredCart();
-        data.order = savedCart;
+         const savedCart = getStoredCart();
+        data.order = savedCart;  
 
         fetch('https://fierce-sands-31991.herokuapp.com/orders', {
             method: 'POST',
@@ -26,8 +26,8 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
         .then(result =>{
             console.log(result);
             if(result.insertedId){
-                   /*  alert('Order proccessed successfully') */
-                    clearTheCart();
+                    alert('submitting successfully')  
+                  /*   clearTheCart(); */
                   /*  setBookingSuccess(true);   */
                     reset();
             }

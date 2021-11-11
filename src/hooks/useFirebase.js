@@ -56,8 +56,10 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const destination = location?.state?.from  || '/';  
-      history.replace(destination);  
+      history.replace(destination); 
+      
        setAuthError('');  
+      
       
     })
     .catch((error) => {  
@@ -99,11 +101,11 @@ const useFirebase = () => {
     
 }
 
-// https://fierce-sands-31991.herokuapp.com/users
-const saveUser = (email,displayName    ) => {
-  const user = {email, displayName};
-  fetch('http://localhost:5000/users',{
-     method: 'POST',
+ 
+const saveUser = (email,displayName  ) => {
+  const user = {email, displayName}; 
+  fetch('https://fierce-sands-31991.herokuapp.com/users',{
+     method: 'POST' ,
     headers: {
       'content-type': 'application/json'
     },  

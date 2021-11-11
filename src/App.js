@@ -15,8 +15,7 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
  import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';  
 import ProductsDetails from './Pages/ProductsDetails/ProductsDetails/ProductsDetails';
-import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
- 
+  
 
 function App() {
   return (
@@ -45,9 +44,7 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard/>
           </PrivateRoute > 
-         {/*  <PrivateRoute path="/orders">
-            <MyOrders/>
-          </PrivateRoute > */} 
+         
            
           <Route path="*">
               <NotFound></NotFound>

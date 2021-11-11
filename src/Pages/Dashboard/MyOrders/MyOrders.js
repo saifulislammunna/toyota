@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
  
 
@@ -16,6 +17,30 @@ const MyOrders = () => {
     return (
         <div>
             <h2>My Orders : {myOrders.length}</h2>
+            <Table striped bordered hover>
+  <thead>
+    <tr>
+       
+      <th>Name</th>
+      <th>Email Address</th>
+      <th>Product Id</th>
+    </tr>
+  </thead>
+  <tbody>
+      {myOrders.map((row)=> (  
+        
+      <tr key={row._id}>
+      
+      <td>{row.name}</td>
+      <td>{row.email}</td>
+      <td>{row._id}</td>
+    </tr>))}
+   
+   
+    
+     
+  </tbody>
+</Table>
         </div>
     );
 };

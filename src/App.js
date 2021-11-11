@@ -15,6 +15,7 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
  import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';  
 import ProductsDetails from './Pages/ProductsDetails/ProductsDetails/ProductsDetails';
+import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
  
 
 function App() {
@@ -41,12 +42,13 @@ function App() {
           <Route path="/register">
             <Register/>
           </Route> 
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard/>
-          </Route> 
-          <Route exact path="/">
-            <Home/>
-          </Route>
+          </PrivateRoute > 
+          <PrivateRoute path="/orders">
+            <MyOrders/>
+          </PrivateRoute > 
+           
           <Route path="*">
               <NotFound></NotFound>
           </Route>

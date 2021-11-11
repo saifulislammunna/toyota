@@ -5,7 +5,7 @@ import useAuth from '../../../../hooks/useAuth';
 import { clearTheCart, getStoredCart } from '../../../../utilities/fakedb';
  
 import './Shipping.css';
-const Shipping = (props) => {
+const Shipping = (props  /* ,setBookingSuccess  */ ) => {
     /* const { name } = props.service; */
 
     const { register, handleSubmit,reset,   formState: { errors } } = useForm();
@@ -26,9 +26,9 @@ const Shipping = (props) => {
         .then(result =>{
             console.log(result);
             if(result.insertedId){
-                    alert('Order proccessed successfully')
+                   /*  alert('Order proccessed successfully') */
                     clearTheCart();
-                     
+                  /*  setBookingSuccess(true);   */
                     reset();
             }
         })

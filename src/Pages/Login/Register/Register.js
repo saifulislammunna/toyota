@@ -19,7 +19,7 @@ const Register = () => {
         console.log(field,value);  
        const newLoginData = {...loginData};
        newLoginData[field] = value;
-         /* console.log(field, value,newLoginData);    */  
+          console.log(field, value,newLoginData);     
        setLoginData(newLoginData);
     }
     

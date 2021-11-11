@@ -18,7 +18,7 @@ import MyOrders from '../MyOrders/MyOrders';
 import Review from '../Review/Review';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageProducts from '../ManageProducts/ManageProducts';
-import AdminRoute from '../../Login/AminRoute/AdminRoute';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
  
  
 const Dashboard = () => {
@@ -61,21 +61,19 @@ const Dashboard = () => {
          < Route     path={`${path}/review`}>
            <Review></Review>
         </Route>
-         < AdminRoute    path={`${path}/manageAllOrders`}>
+         <AdminRoute    path={`${path}/manageAllOrders`}>
             <ManageAllOrders></ManageAllOrders>
-        </ AdminRoute >
-         <  AdminRoute    path={`${path}/manageProducts`}>
+        </AdminRoute >
+         <AdminRoute    path={`${path}/manageProducts`}>
             <ManageProducts></ManageProducts>
-        </ AdminRoute >
-         <  AdminRoute  path={`${path}/makeAdmin`}>
+        </AdminRoute >
+         <AdminRoute  path={`${path}/makeAdmin`}>
            <MakeAdmin></MakeAdmin>
-        </ AdminRoute >
-         <  AdminRoute   path={`${path}/addProduct`}>
+        </AdminRoute >
+         <AdminRoute   path={`${path}/addProduct`}>
             <AddProduct></AddProduct>
-        </ AdminRoute >
-        {/*<AdminRoute path={`${path}/addDoctor`}>
-             <AddDoctor></AddDoctor> 
-        </AdminRoute>   */}
+        </AdminRoute >
+        
     </Switch>  
     </div>
    </div>

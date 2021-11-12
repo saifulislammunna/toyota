@@ -14,11 +14,12 @@ import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddProduct from '../AddProduct/AddProduct';
 import Pay from '../Pay/Pay';
-import MyOrders from '../MyOrders/MyOrders';
+ 
 import Review from '../Review/Review';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import AllMyOrders from '../AllMyOrders/AllMyOrders';
  
  
 const Dashboard = () => {
@@ -30,7 +31,7 @@ const Dashboard = () => {
             <Link to="/dashboard"><h1 className="dashboard" >Dashboard</h1></Link>
         <div>
             
-            <div class="sidenav">
+            <div className="sidenav">
         {!admin && <div><Link to={`${url}/orders`}><Button className="bg-dark">My Orders</Button></Link>
         <Link to={`${url}/pay`}><Button className="bg-dark">Pay</Button></Link>
        
@@ -48,7 +49,7 @@ const Dashboard = () => {
  {/*  <a href="#contact">Contact</a> */}
 </div>
 
-   <div class="main">
+   <div className="main">
    <Switch>
         { !admin  ? <Route exact path={path}>
             <DashboardHome></DashboardHome>
@@ -56,7 +57,7 @@ const Dashboard = () => {
         <AddProduct></AddProduct>
         </AdminRoute >}
          < Route     path={`${path}/orders`}>
-            <MyOrders></MyOrders>
+            <AllMyOrders></AllMyOrders>
         </Route>
          < Route     path={`${path}/pay`}>
            <Pay></Pay>

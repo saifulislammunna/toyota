@@ -3,7 +3,7 @@ import { Button , Table } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
  
 
-const MyOrders = () => {
+const AllMyOrders = () => {
     const {user } = useAuth();
     const [myOrders, setMyOrders] = useState([]);
    
@@ -67,4 +67,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default AllMyOrders;

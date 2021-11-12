@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { /* Alert, */ Button  } from 'react-bootstrap';
+import {   Button  } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import Shipping from '../../Shared/Shipping/Shipping/Shipping';
 
 const ProductsDetails = () => {
-   /*  const [bookingSuccess,setBookingSuccess] = useState(false); */
+    
     const {_id} = useParams();
     const [product,setProduct] = useState([]);
     
@@ -22,10 +22,7 @@ const ProductsDetails = () => {
     },[]);
     return (
         <div className="service-detail">
-        {/*     {bookingSuccess && <Alert variant="success">
-  <Alert.Heading>Booking successfully</Alert.Heading>
-   
-</Alert>} */}
+      
             
            <div className="service-img p-3">
             <img src={product.img}  alt="" />
@@ -47,7 +44,7 @@ const ProductsDetails = () => {
             
             <div>
                <Shipping
-              /*  setBookingSuccess={setBookingSuccess} */
+              
                ></Shipping>
             </div>
            

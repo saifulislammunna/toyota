@@ -2,11 +2,11 @@ import React from 'react';
 import { useForm } from 'react-hook-form'; 
  
 import useAuth from '../../../../hooks/useAuth';
-  import { /* clearTheCart,  */getStoredCart } from '../../../../utilities/fakedb';  
+  import {  getStoredCart } from '../../../../utilities/fakedb';  
  
 import './Shipping.css';
-const Shipping = (props  /* ,setBookingSuccess  */ ) => {
-    /* const { name } = props.service; */
+const Shipping = (props   ) => {
+    
 
     const { register, handleSubmit,reset,   formState: { errors } } = useForm();
     const {user} = useAuth();
@@ -27,8 +27,7 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
             console.log(result);
             if(result.insertedId){
                     
-                  /*   clearTheCart(); */
-                  /*  setBookingSuccess(true);   */
+                 
                     reset();
             }
         })
@@ -37,7 +36,8 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
     };
 
     const onClick = () => {
-        alert('submitting successfully')  
+        alert('submitting successfully') 
+        reset(); 
     }
     return (
         <div>
@@ -54,7 +54,7 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
     </form>
         </div>
      
-       {/*  <button onClick={() => props.handleAddToCart(props.product)} >Place Order</button> */}
+       
         </div>
     );
 };

@@ -12,7 +12,11 @@ const ManageAllOrders = () => {
         /* console.log(url); */
         fetch(url)
         .then(res => res.json())
-        .then(data =>  setOrders(data));
+        .then(data =>    setOrders(data)  
+          
+        /*  console.log(data) */
+        
+        );
     },[]);
 
     const handleDelete = _id => {

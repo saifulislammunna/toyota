@@ -13,7 +13,7 @@ const Banner = () => {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 70,
-             strings: ['  Toyota .']
+             strings: ['  Best Cars .']
         })
     })
     return (

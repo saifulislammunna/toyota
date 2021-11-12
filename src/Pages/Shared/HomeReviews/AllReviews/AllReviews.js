@@ -11,9 +11,9 @@ const AllReviews = () => {
     }, [])
 
     return (
-        <div className="reviews p-5">
+        <div className="reviews">
              
-            <div className="product-container">
+            <div className="product-container p-2">
                 {
                     products.map(product => <SingleReviews
                         key={product._id}

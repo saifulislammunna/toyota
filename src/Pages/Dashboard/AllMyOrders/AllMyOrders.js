@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button , Table } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
- 
+import './AllMyOrders.css';
 
 const AllMyOrders = () => {
     const {user } = useAuth();
@@ -37,7 +37,7 @@ const AllMyOrders = () => {
     return (
         <div>
             <h2>My Orders : {myOrders.length}</h2>
-            <Table striped bordered hover>
+            <Table  responsive striped bordered hover>
   <thead>
     <tr>
        

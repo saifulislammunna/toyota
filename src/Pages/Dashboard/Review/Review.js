@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
  
  
 import useAuth from '../../../hooks/useAuth';
-import StarRating from 'react-bootstrap-star-rating';
+ 
 
  
 import './Review.css';
@@ -29,7 +29,7 @@ const Review = (props ) => {
             if(result.insertedId){
                    alert('Review proccessed successfully')  
                    
-                  /*  setBookingSuccess(true);   */
+                  
                     reset();
             }
         })
@@ -46,11 +46,7 @@ const Review = (props ) => {
       {errors.email && <span className="error">This field is required</span>} 
        
       <input {...register("description")} placeholder="Description" />
-      <StarRating
-        defaultValue={5}
-        min={0}
-        max={5}
-          />
+       
       
       <input type="submit"/> 
     </form>

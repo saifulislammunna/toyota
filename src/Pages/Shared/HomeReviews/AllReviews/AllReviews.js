@@ -7,11 +7,11 @@ const AllReviews = () => {
     useEffect(() => {
         fetch('https://fierce-sands-31991.herokuapp.com/reviews')
             .then(res => res.json())
-            .then(data => setProducts(data.slice(0,6)));
+            .then(data => setProducts(data));
     }, [])
 
     return (
-        <div id="products">
+        <div className="reviews p-5">
              
             <div className="product-container">
                 {

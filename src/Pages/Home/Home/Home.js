@@ -1,5 +1,6 @@
 import React from 'react';
 import Cars from '../../Shared/Cars/Cars/Cars';
+import Connect from '../../Shared/Connect/Connect';
 import Footer from '../../Shared/Footer/Footer/Footer';
 import HomeReviews from '../../Shared/HomeReviews/HomeReviews/HomeReviews';
  
@@ -15,6 +16,7 @@ const Home = () => {
               <Banner></Banner>
               <Cars></Cars>
               <HomeReviews></HomeReviews> 
+              <Connect></Connect>
               <Footer></Footer>
         </div>
     );

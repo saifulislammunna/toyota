@@ -4,7 +4,8 @@ import { useForm } from 'react-hook-form';
  
  
 import useAuth from '../../../hooks/useAuth';
- 
+import StarRating from 'react-bootstrap-star-rating';
+
  
 import './Review.css';
 const Review = (props ) => {
@@ -44,7 +45,12 @@ const Review = (props ) => {
       <input defaultValue={user.email} {...register("email", { required: true })} />
       {errors.email && <span className="error">This field is required</span>} 
        
-      <textarea {...register("description")} placeholder="Description" />
+      <input {...register("description")} placeholder="Description" />
+      <StarRating
+        defaultValue={5}
+        min={0}
+        max={5}
+          />
       
       <input type="submit"/> 
     </form>

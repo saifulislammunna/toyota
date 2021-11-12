@@ -8,7 +8,7 @@ const Vehicle = ({ product}) => {
     return (
        
   <div>
-      <div className="single-service">
+      <div className="single-product">
           {/* card group added */}
              <CardGroup >
                <Card  className=" ">

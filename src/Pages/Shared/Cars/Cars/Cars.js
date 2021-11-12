@@ -3,7 +3,7 @@ import Vehicles from '../Vehicles/Vehicles';
 
 const Cars = () => {
     return (
-        <div>
+        <div className="products">
             <Vehicles></Vehicles>
         </div>
     );

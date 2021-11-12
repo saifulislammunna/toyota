@@ -12,8 +12,8 @@ const Items = () => {
     }, [])
 
     return (
-        <div id="products">
-            <h2 className="text-primary mt-5">Our products</h2>
+        <div className="products">
+            <h2 className="p-5   ">Our Excellent products</h2>
             <div className="product-container">
                 {
                     products.map(product => <Item 

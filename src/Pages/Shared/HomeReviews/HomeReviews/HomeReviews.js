@@ -4,7 +4,7 @@ import AllReviews from '../AllReviews/AllReviews';
 const HomeReviews = () => {
     return (
         <div>
-            <h1>This is Home REview</h1>
+            <h1 className="p-5 fs-1 review  fw-bolder"> Review</h1>
               <AllReviews></AllReviews>
         </div>
     );

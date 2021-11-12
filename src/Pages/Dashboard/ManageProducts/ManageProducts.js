@@ -52,7 +52,7 @@ const ManageProducts = () => {
       <tr key={product._id}>
       
       <td>{product.name}</td>
-      <td><img src={product.img} alt="" /> </td>
+      <td><img className="w-50" src={product.img} alt="" /> </td>
       <td>{product._id}</td>
       <td><Button  onClick={ () => handleDelete(product._id)} className="bg-danger">Delete</Button ></td>
     </tr>))}

@@ -26,7 +26,7 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
         .then(result =>{
             console.log(result);
             if(result.insertedId){
-                    alert('submitting successfully')  
+                    
                   /*   clearTheCart(); */
                   /*  setBookingSuccess(true);   */
                     reset();
@@ -35,6 +35,10 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
 
         console.log(data)
     };
+
+    const onClick = () => {
+        alert('submitting successfully')  
+    }
     return (
         <div>
             <div>
@@ -46,7 +50,7 @@ const Shipping = (props  /* ,setBookingSuccess  */ ) => {
       <input  defaultValue=" " placeholder="Address" {...register("address")} />
       <input placeholder="city" defaultValue=" " {...register("city")} />
       <input placeholder="phone number" defaultValue=" " {...register("phone")} />
-      <input type="submit"/> 
+      <input onClick={onClick} type="submit"/> 
     </form>
         </div>
      

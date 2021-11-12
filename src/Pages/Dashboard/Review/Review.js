@@ -38,8 +38,9 @@ const Review = (props ) => {
     };
     return (
         <div>
-            <div>
-             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
+            <div className="user-review">
+                <h1>Review</h1>
+             <form className="review-form" onSubmit={handleSubmit(onSubmit)}>
        
       <input defaultValue={user.displayName}  {...register("name")} />
       <input defaultValue={user.email} {...register("email", { required: true })} />

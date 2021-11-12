@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Alert, Button  } from 'react-bootstrap';
+import './MakeAdmin.css';
+
 
 const MakeAdmin = () => {
 
@@ -29,7 +31,7 @@ const MakeAdmin = () => {
         e.preventDefault();
     }
     return (
-        <div>
+        <div className="admin">
             <h2>Make An admin</h2>
             <form onSubmit={ handleAdminSubmit}>
             <div className="row mb-3">

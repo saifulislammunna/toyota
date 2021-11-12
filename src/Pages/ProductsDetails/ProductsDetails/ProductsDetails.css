@@ -1,0 +1,10 @@
+
+ /* responsive added */
+ @media only screen  and (max-width:688px){
+    .service-detail img{
+             
+      width: 300px;
+    }
+  
+   }
+   

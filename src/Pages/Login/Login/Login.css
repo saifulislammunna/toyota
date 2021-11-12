@@ -1,0 +1,20 @@
+  .form-control {
+    width: 650px
+    !important; 
+    height: 30px
+    !important;
+    
+}  
+
+/* responsive  added for log in form */
+@media only screen  and (max-width:688px){
+    .form-control{
+       
+         width: 250px
+            !important; 
+           height: 30px
+            !important;
+               
+    
+    }
+}

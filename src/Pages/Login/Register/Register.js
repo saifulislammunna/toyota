@@ -35,7 +35,7 @@ const Register = () => {
       }
 
     return (
-       <div>
+       <div className="mx-5">
            {!isLoading && <form onSubmit={handleLoginSubmit}>
         
      <h2>Register</h2>

@@ -8,13 +8,13 @@ const ManageAllOrders = () => {
    
 
     useEffect(()=>{
-        const url = `https://fierce-sands-31991.herokuapp.com/orders`
+        const url = `https://fierce-sands-31991.herokuapp.com/order`
         /* console.log(url); */
         fetch(url)
         .then(res => res.json())
-        .then(data =>    setOrders(data)  
+        .then(data =>     setOrders(data)  
           
-        /*  console.log(data) */
+           /* console.log(data)   */
         
         );
     },[]);

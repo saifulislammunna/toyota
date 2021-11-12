@@ -5,7 +5,7 @@ import useAuth from '../../../../hooks/useAuth';
   import {  getStoredCart } from '../../../../utilities/fakedb';  
  
 import './Shipping.css';
-const Shipping = (props   ) => {
+const Shipping = (props) => {
     
 
     const { register, handleSubmit,reset,   formState: { errors } } = useForm();

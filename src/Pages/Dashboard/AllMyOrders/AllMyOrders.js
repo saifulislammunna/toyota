@@ -45,7 +45,7 @@ const AllMyOrders = () => {
       <th>Email Address</th>
       <th>Product Id</th>
       <th>Deleting Order</th>
-      <th>Status</th>
+       
 
     </tr>
   </thead>

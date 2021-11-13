@@ -9,7 +9,7 @@ const Connect = () => {
               
        <div    className="p-5 d-flex justify-content-center align-items-center rounded-3">
       <div>
-        <h1> Stay In Connect & Messsage for Uplift  </h1>
+        <h1> Stay In Connect & Message for Uplift  </h1>
         <p className="p-2">Get updates on news, specials and more</p>
         <input  className="form-control" type="email" placeholder="Your Email"/>
         <br/>

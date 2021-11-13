@@ -6,7 +6,7 @@ import './AllMyOrders.css';
 const AllMyOrders = () => {
     const {user } = useAuth();
     const [myOrders, setMyOrders] = useState([]);
-   
+  
 
     useEffect(()=>{
         const url = `https://fierce-sands-31991.herokuapp.com/orders?email=${user.email}`
@@ -45,6 +45,8 @@ const AllMyOrders = () => {
       <th>Email Address</th>
       <th>Product Id</th>
       <th>Deleting Order</th>
+      <th>Status</th>
+
     </tr>
   </thead>
   <tbody>
@@ -55,6 +57,7 @@ const AllMyOrders = () => {
       <td>{order.name}</td>
       <td>{order.email}</td>
       <td>{order._id}</td>
+     
       <td><Button  onClick={ () => handleDelete(order._id)} className="bg-danger">Delete</Button ></td>
     </tr>))}
    

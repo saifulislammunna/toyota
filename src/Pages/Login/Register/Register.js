@@ -53,15 +53,15 @@ const Register = () => {
      </div>
     <div className="row mb-3">
       <label htmlFor="inputPassword3" className="col-sm-2 col-form-label fs-3">Password :</label>
-      <div className="col-sm-10  ">
+      <div className="col-sm-10  pt-3">
       <input   onBlur={handleOnBlur}  type="password" className="form-control w-50" name="password" id="inputPassword3" placeholder="Your password"/>
    </div>
    
    </div>
     <div className="row mb-3">
       <label htmlFor="inputPassword3" className="col-sm-2 col-form-label fs-3">Confirm Password :</label>
-      <div className="col-sm-10  ">
-      <input   onBlur={handleOnBlur}  type="password" className="form-control w-50" name="password2" id="inputPassword4" placeholder="Re-type Your password"/>
+      <div className="col-sm-10  pt-5">
+      <input   onBlur={handleOnBlur}  type="password" className="form-control  w-50" name="password2" id="inputPassword4" placeholder="Re-type Your password"/>
    </div>
 
    </div>

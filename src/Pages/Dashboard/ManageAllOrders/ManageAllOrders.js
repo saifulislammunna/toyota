@@ -40,6 +40,7 @@ const ManageAllOrders = () => {
     return (
         <div>
             <h2>Manage All   Orders : {orders.length}</h2>
+            {/* All Order Showing With Table */}
             <Table responsive  striped bordered hover>
   <thead>
     <tr>

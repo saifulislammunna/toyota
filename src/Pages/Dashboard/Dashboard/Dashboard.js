@@ -47,7 +47,7 @@ const Dashboard = () => {
           user?.email ? <Button    onClick={logout}    >Log out</ Button>
         :
          ''}  
- {/*  <a href="#contact">Contact</a> */}
+  
 </div>
 
    <div className="main">

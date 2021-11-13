@@ -36,6 +36,8 @@ const ManageProducts = () => {
     return (
         <div>
             <h2>Manage All   Products : {products.length}</h2>
+             {/*All Products Show With Table  */}
+
             <Table responsive  striped bordered hover>
   <thead>
     <tr>

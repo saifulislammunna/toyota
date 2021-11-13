@@ -3,6 +3,7 @@ import Vehicle from '../Vehicle/Vehicle';
 import './Vehicles.css';
 const Vehicles = () => {
     const [products, setProducts] = useState([])
+    
     useEffect(() => {
         fetch('https://fierce-sands-31991.herokuapp.com/products')
             .then(res => res.json())

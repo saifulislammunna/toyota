@@ -23,10 +23,10 @@ const ProductsDetails = () => {
         });
     },[_id]);
     return (
-        <div className="service-detail">
+        <div className="product-detail">
       
             
-           <div className="service-img p-3">
+           <div className="product-img p-3">
             <img src={product.img}  alt="" />
             </div>
            
@@ -36,9 +36,9 @@ const ProductsDetails = () => {
              
                        <h1 className="pb-2 ">{ product.name} </h1>
                            <p className="p-2 ">{product.description}</p>
-                           <Button   className="btn   ">
+                           <Button   className=" ">
                   
-                  <span className="  "> Book Now</span></Button> 
+                  <span className="  "> Buy Now</span></Button> 
                        </div >
             
                 

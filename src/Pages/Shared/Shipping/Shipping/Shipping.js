@@ -2,9 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form'; 
  
 import useAuth from '../../../../hooks/useAuth';
-  import {  getStoredCart } from '../../../../utilities/fakedb';  
+import {  getStoredCart } from '../../../../utilities/fakedb';  
  
 import './Shipping.css';
+
 const Shipping = (props) => {
     
 

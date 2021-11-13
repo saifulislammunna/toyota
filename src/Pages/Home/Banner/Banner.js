@@ -6,6 +6,7 @@ import { init } from 'ityped';
 import './Banner.css';
 const Banner = () => {
 
+    /* animation added */
     const textRef = useRef();
     useEffect(() => {
 

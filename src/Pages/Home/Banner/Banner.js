@@ -20,8 +20,8 @@ const Banner = () => {
         <div>
             
              
-             <div>
-              <div className="carousel-part background-image">
+             <div className="banner">
+              <div className="background-image">
               <div className="left-container  half-width ">
                      <div className="text-container">
                          <h1 className="fs-1 fw-bold text-white " >Once You Drive One, <br />

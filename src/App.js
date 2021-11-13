@@ -26,26 +26,31 @@ function App() {
           <Route path="/home">
             <Home/>
           </Route>
+
           <Route exact path="/">
             <Home/>
           </Route>
+
            <Route path="/login">
             <Login/>
           </Route>  
+
            <Route exact path="/products">
              <Products></Products>
           </Route>  
+
            <PrivateRoute exact path="/products/:_id">
               <ProductsDetails></ProductsDetails>
           </PrivateRoute>  
+
           <Route path="/register">
             <Register/>
           </Route> 
+
           <PrivateRoute path="/dashboard">
             <Dashboard/>
           </PrivateRoute > 
-         
-           
+                  
           <Route path="*">
               <NotFound></NotFound>
           </Route>

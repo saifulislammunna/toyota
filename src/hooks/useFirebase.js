@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import initializeFirebase from "../Pages/Login/Login/Firebase/firebase.init"
 import { getAuth, createUserWithEmailAndPassword,signOut,signInWithEmailAndPassword  , onAuthStateChanged, updateProfile} from "firebase/auth";  
 
-
+// initialize firebase app
 initializeFirebase()
 
 const useFirebase = () => {

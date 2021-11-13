@@ -36,6 +36,7 @@ const Dashboard = () => {
         <Link to={`${url}/pay`}><Button className="bg-dark">Pay</Button></Link>
        
         <Link to={`${url}/review`}><Button className="bg-dark">Review</Button></Link></div>}
+        
         {admin && <div> <Link to={`${url}/addProduct`}><Button className="bg-dark">Add a Product</Button></Link>
          <Link to={`${url}/manageAllOrders`}><Button className="bg-dark">Manage All Orders</Button></Link>
         

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+ 
 import './Connect.css';
 const Connect = () => {
     return (
@@ -12,6 +13,8 @@ const Connect = () => {
         <input  class="form-control" type="text" placeholder="Your Email"/>
         <br/>
         <Button type="submit" >Submit</Button >
+ 
+        
       </div>
        </div>
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button , Card, CardGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Vehicle.css';
 const Vehicle = ({ product}) => {
       
@@ -19,7 +21,7 @@ const Vehicle = ({ product}) => {
                       < p className="text-start"> {description}</p>
                       <h5>Price: {price}</h5>
                       <div>
-                        <Link to={`/products/${_id}`} ><Button> {/* <FontAwesomeIcon icon={faInfo } /> */} Buy Now</Button> </Link>
+                        <Link to={`/products/${_id}`} ><Button> <FontAwesomeIcon icon={faShoppingCart} /> Buy Now</Button> </Link>
                    </div>
                 </Card.Body>
               </Card>

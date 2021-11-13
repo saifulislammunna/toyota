@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
  
 import useAuth from '../../../hooks/useAuth';
  
+ 
 
  
 import './Review.css';
@@ -33,9 +34,12 @@ const Review = (props ) => {
                     reset();
             }
         })
+        
 
-        console.log(data)
+        /* console.log(data) */
     };
+
+    
     return (
         <div>
             <div className="user-review">

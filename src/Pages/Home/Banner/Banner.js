@@ -28,7 +28,7 @@ const Banner = () => {
                        You'll never stop.</h1>
                          <h3 className="text-animation fs-1 text-white"> <span  ref={textRef}></span></h3>
   
-                           <Link  to="/products"><Button>Explore</Button></Link> 
+                           <Link  to="/products"><Button className="btn">Explore</Button></Link> 
                      </div>
                 </div>
           

@@ -9,7 +9,7 @@
  <ul>
     <li>In home page different type of toyota Car products provided.</li>
     <li>you can Register through name, Email & Password</li>
-    <li>After log in Three new navbar options will open</li>
+    <li>After log in  , new navbar options will appear</li>
     <li>In My Orders you can add your favourite car</li>
     <li>Admin can add a new product in admin dashboard add a product section   </li>
  </ul>

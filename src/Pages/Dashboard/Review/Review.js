@@ -50,7 +50,7 @@ const Review = (props ) => {
       <input defaultValue={user.email} {...register("email", { required: true })} />
       {errors.email && <span className="error">This field is required</span>} 
        
-      <input {...register("description")} placeholder="Description" />
+      <input {...register("description")} placeholder="review" />
        
       
       <input type="submit"/> 

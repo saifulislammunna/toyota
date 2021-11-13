@@ -1,4 +1,4 @@
-@media only screen  and (max-width:688px){
+ @media only screen  and (max-width:688px){
     .admin{
        
          padding-left: 0;
@@ -6,5 +6,16 @@
          display: flex;
          flex-direction: column;     
     
+    }  
+     
+        .make-admin{
+           
+             width: 150px
+                !important; 
+               height: 30px
+                !important;
+                   
+        
+        }  
     }
-}
+ 

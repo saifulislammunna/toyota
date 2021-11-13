@@ -37,7 +37,7 @@ const MakeAdmin = () => {
             <div className="row mb-3">
               <label htmlFor="inputEmail3" className="col-sm-2 col-form-label fs-3">Email :</label>
             <div className="col-sm-10 pt-3">
-              <input   onBlur={handleOnBlur}  required type="email" className="form-control w-50" id="inputEmail3"  placeholder="Your Email"/>
+              <input   onBlur={handleOnBlur}  required type="email" className="make-admin" id="inputEmail3"  placeholder="Your Email"/>
               
            </div>
            

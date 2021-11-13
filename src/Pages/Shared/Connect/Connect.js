@@ -10,7 +10,7 @@ const Connect = () => {
       <div>
         <h1>Let's Stay In Touch</h1>
         <p className="p-2">Get updates on sales, specials and more</p>
-        <input  class="form-control" type="text" placeholder="Your Email"/>
+        <input  className="form-control" type="text" placeholder="Your Email"/>
         <br/>
         <Button type="submit" >Submit</Button >
  

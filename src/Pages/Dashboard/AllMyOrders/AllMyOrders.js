@@ -14,7 +14,7 @@ const AllMyOrders = () => {
         fetch(url)
         .then(res => res.json())
         .then(data =>  setMyOrders(data));
-    },[]);
+    },[user.email]);
 
     const handleDelete = _id => {
       const url =  `https://fierce-sands-31991.herokuapp.com/orders/${_id}`

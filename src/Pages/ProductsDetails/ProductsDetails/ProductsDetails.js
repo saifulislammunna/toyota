@@ -16,12 +16,12 @@ const ProductsDetails = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            const selected = data.find ( s => s._id == _id)
+            const selected = data.find ( s => s._id === _id)
                console.log(selected) 
                
                setProduct(selected);
         });
-    },[]);
+    },[_id]);
     return (
         <div className="service-detail">
       

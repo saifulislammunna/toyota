@@ -9,9 +9,11 @@ const Connect = () => {
               
        <div    className="p-5 d-flex justify-content-center align-items-center rounded-3">
       <div>
-        <h1>Let's Stay In Contact</h1>
+        <h1> Stay In Contact & Messsage for Uplift  </h1>
         <p className="p-2">Get updates on news, specials and more</p>
-        <input  className="form-control" type="text" placeholder="Your Email"/>
+        <input  className="form-control" type="email" placeholder="Your Email"/>
+        <br/>
+        <input  className="form-control" type="text" placeholder="Send a message"/>
         <br/>
         <Button type="submit" >Submit</Button >
  
